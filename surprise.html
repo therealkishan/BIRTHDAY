@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, My Love!</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            background-color: #ffe4e1;
+            color: #d81b60;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            animation: bounceIn 2s ease-in-out;
+            color: #c2185b;
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 1em;
+            color: #880e4f;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 90%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .balloons {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .balloon {
+            position: absolute;
+            bottom: -150px;
+            width: 80px;
+            height: 100px;
+            background-color: #ff4081;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            opacity: 0.8;
+            animation: float 10s linear infinite;
+        }
+        .balloon:before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 120px;
+            background: #d81b60;
+            top: 98px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .balloon:nth-child(2) {
+            left: 20%;
+            background-color: #ffd740;
+            animation-duration: 12s;
+        }
+        .balloon:nth-child(3) {
+            left: 40%;
+            background-color: #ff8a80;
+            animation-duration: 9s;
+        }
+        .balloon:nth-child(4) {
+            left: 60%;
+            background-color: #80d8ff;
+            animation-duration: 11s;
+        }
+        .balloon:nth-child(5) {
+            left: 80%;
+            background-color: #b9f6ca;
+            animation-duration: 13s;
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.1); opacity: 0; }
+            60% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+        @keyframes float {
+            0% { transform: translateY(0); opacity: 0.8; }
+            50% { transform: translateY(-700px); opacity: 0.6; }
+            100% { transform: translateY(-1200px); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="balloons">
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+    </div>
+    <div class="container">
+        <h1>Happy Birthday, My Love!</h1>
+        <h2>To the most amazing person in my life,</h2>
+        <p>Wishing you the happiest of birthdays! Every moment with you is a gift, and I'm so grateful to have you. May your day be filled with joy, laughter, and everything you've ever wished for.</p>
+        <p>You light up my world, and I love you more than words can say.</p>
+        <p>With all my love,</p>
+        <p>Kishan</p>
+       
+    </div>
+</body>
+</html>
